@@ -10,7 +10,7 @@ def cur_datetime():
 
 class Customers(db.Model):
     """
-    Esta tabela pega todos os dados que foram coletados ao longo de todas as consultas entre APIS
+    Esta tabela pega todos os dados que foram coletados 
     """
     __tablename__ = 'Clients'
 
@@ -20,10 +20,7 @@ class Customers(db.Model):
 
     # insumos
     name = db.Column('name', db.String(40), nullable=True)
-    phone_number = db.Column('phone_number', db.String(20), nullable=True)
-    document_number = db.Column('document_number', db.String(20), nullable=True)
     email = db.Column('email', db.String(40), nullable=True)
-    address = db.Column('address', db.String(100), nullable=True)
     message = db.Column('message', db.String(300), nullable=True)
 
 
